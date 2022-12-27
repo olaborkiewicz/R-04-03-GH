@@ -1,0 +1,89 @@
+.link {
+  display: inline;
+  height: 100px;
+  float: left;
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  font-family: "Prosto One", cursive;
+}
+
+#navi {
+  display: inline;
+  height: fit-content;
+  float: right;
+  text-align: center;
+  font-family: "Prosto One", cursive;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#container {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Prosto One", cursive;
+}
+
+@media only and (min-width: 1024px) {
+  .dropbtn {
+    display: none;
+  }
+}
+
+@media only and (max-width: 1024px) {
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #517994;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+}
