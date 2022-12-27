@@ -1,17 +1,14 @@
 .link {
-  display: inline;
+  display: flex;
   height: 100px;
-  float: left;
   text-align: center;
   padding: 15px;
-  margin: auto;
   font-family: "Prosto One", cursive;
 }
 
-#navi {
-  display: inline;
+.navi {
+  display: flex;
   height: fit-content;
-  float: right;
   text-align: center;
   font-family: "Prosto One", cursive;
   line-height: 30px;
@@ -26,9 +23,9 @@ a:hover {
   color: tomato;
 }
 
-#container {
-  display: inline;
-  flex-wrap: wrap;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
@@ -37,13 +34,18 @@ h1 {
   font-family: "Prosto One", cursive;
 }
 
-@media only and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .dropbtn {
     display: none;
   }
 }
 
-@media only and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .dropbtn {
     background-color: #3498db;
     color: white;

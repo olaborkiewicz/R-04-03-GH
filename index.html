@@ -12,18 +12,16 @@
     />
   </head>
   <body>
-    <nav id="container">
+    <nav class="container">
       <div class="link">
         <a href="index.html">FIRMA NAVI</a>
       </div>
-      <div id="navi">
-        <ul class="menu">
-          <button onclick="myFunction()" class="dropbtn">MENU</button>
-          <div id="myDropdown" class="dropdown-content">
+      <div class="navi">
+        <button onclick="myFunction()" class="dropbtn">MENU</button>
+        <div id="myDropdown" class="dropdown-content">
+          <ul class="menu">
             <li>
-              <a href="o_nas.html" target="_blank" class="dropdown-toggle"
-                >O NAS</a
-              >
+              <a href="o_nas.html" target="_blank">O NAS</a>
             </li>
             <li>
               <a href="galeria.html" target="_blank">GALERIA</a>
@@ -34,18 +32,15 @@
             <li>
               <a href="kontakt.html" target="_blank">KONTAKT</a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </nav>
     <script>
-      /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
 
-      // Close the dropdown if the user clicks outside of it
       window.onclick = function (event) {
         if (!event.target.matches(".dropbtn")) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
