@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="container">
@@ -17,42 +23,22 @@
         <a href="index.html">FIRMA NAVI</a>
       </div>
       <div class="navi">
-        <button onclick="myFunction()" class="dropbtn">MENU</button>
-        <div id="myDropdown" class="dropdown-content">
-          <ul class="menu">
-            <li>
-              <a href="o_nas.html" target="_blank">O NAS</a>
-            </li>
-            <li>
-              <a href="galeria.html" target="_blank">GALERIA</a>
-            </li>
-            <li>
-              <a href="sklep.html" target="_blank">SKLEP</a>
-            </li>
-            <li>
-              <a href="kontakt.html" target="_blank">KONTAKT</a>
-            </li>
-          </ul>
-        </div>
+        <img src="bar_image.jpg" class="button"></img>
+        <ul class="menu">
+          <li>
+            <a href="o_nas.html" target="_blank">O NAS</a>
+          </li>
+          <li>
+            <a href="galeria.html" target="_blank">GALERIA</a>
+          </li>
+          <li>
+            <a href="sklep.html" target="_blank">SKLEP</a>
+          </li>
+          <li>
+            <a href="kontakt.html" target="_blank">KONTAKT</a>
+          </li>
+        </ul>
       </div>
     </nav>
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
   </body>
 </html>
