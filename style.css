@@ -1,19 +1,36 @@
+body {
+  font-family: "Prosto One", cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .link {
   display: flex;
-  height: 100px;
-  text-align: center;
   padding: 15px;
-  font-family: "Prosto One", cursive;
 }
 
 .navi {
   display: flex;
   height: fit-content;
   text-align: center;
-  font-family: "Prosto One", cursive;
   line-height: 30px;
   margin-right: 20px;
   flex-direction: column;
+}
+
+.button {
+  display: none;
+}
+
+.button_img {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -25,39 +42,31 @@ a:hover {
   transition-duration: 0.5s;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  list-style-type: none;
-}
-
-@media only screen and (min-width: 1024px) {
-  .button {
-    display: none;
-  }
+h1 {
+  text-align: center;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 1024px) {
   .button {
+    display: flex;
     width: 100px;
     height: 100px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .container {
-    flex-direction: column;
-    justify-content: center;
+  .button_img {
+    display: flex;
+    width: 100px;
+    height: 100px;
   }
 
   .menu {
     display: none;
   }
-}
 
-h1 {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Prosto One", cursive;
+  .a:hover {
+    display: none;
+  }
 }
