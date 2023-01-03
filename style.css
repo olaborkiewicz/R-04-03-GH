@@ -8,38 +8,30 @@ body {
 }
 
 .link {
-  display: flex;
   padding: 15px;
-}
-
-.navi {
-  display: flex;
-  height: fit-content;
-  text-align: center;
-  line-height: 30px;
-  margin-right: 20px;
-  flex-direction: column;
-}
-
-.button {
-  display: none;
-}
-
-.button_img {
-  display: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
   text-decoration: none;
 }
 
-a:hover {
-  color: tomato;
-  transition-duration: 0.5s;
+.button {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  display: none;
+}
+
+.a:hover {
+  display: none;
 }
 
 h1 {
@@ -47,26 +39,34 @@ h1 {
   font-size: 30px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .button {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button_img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-  }
-
+@media only screen and (min-width: 1024px) {
   .menu {
+    display: flex;
+    height: fit-content;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  a:hover {
+    color: tomato;
+  }
+
+  .button {
     display: none;
   }
 
-  .a:hover {
+  .button_img {
     display: none;
   }
 }
